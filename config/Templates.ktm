@@ -13,7 +13,7 @@ private val FILTER_RECURSIVE: (File) -> Boolean = { it.isDirectory() || it.getPa
 private val FILTER_FILES_ONLY: (File) -> Boolean = { it.isFile() && it.getPath().endsWith(".kt") }
 //private val FILTER_JAR: (File) -> Boolean = { it.isDirectory() || it.getPath().endsWith(".jar") }
 
-private val ROOT = "src/templates/org/lwjgl"
+private val ROOT = "modules/templates/src/main/kotlin/org/lwjgl"
 
 fun project() {
 	module("Templates", System.getProperty("org.lwjgl.templates.output")!!) {
@@ -63,7 +63,7 @@ fun project() {
 		//classpath += jar
 
 		// Compilation classpath
-		classpath += "src/templates"
+		classpath += "modules/templates/src/main/java"
 	}
 }
 
