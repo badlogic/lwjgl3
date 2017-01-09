@@ -206,8 +206,8 @@ ENABLE_WARNINGS()
 		""",
 
 		ETrackedDeviceClass.IN("eTrackedDeviceClass", "", "ETrackedDeviceClass_\\w+"),
-		TrackedDeviceIndex_t.p.OUT("punTrackedDeviceIndexArray", ""),
-		AutoSize("punTrackedDeviceIndexArray")..nullable..uint32_t.IN("unTrackedDeviceIndexArrayCount", ""),
+		nullable..TrackedDeviceIndex_t.p.OUT("punTrackedDeviceIndexArray", ""),
+		AutoSize("punTrackedDeviceIndexArray")..uint32_t.IN("unTrackedDeviceIndexArrayCount", ""),
 		TrackedDeviceIndex_t.IN("unRelativeToTrackedDeviceIndex", ""),
 
 		returnDoc = "the number of devices in the list, or the size of the array needed if not large enough"
