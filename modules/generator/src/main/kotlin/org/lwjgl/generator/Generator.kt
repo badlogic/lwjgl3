@@ -47,6 +47,7 @@ enum class Binding(val key: String, val packageName: String) {
 	OPENCL("binding.opencl", "org.lwjgl.opencl"),
 	OPENGL("binding.opengl", "org.lwjgl.opengl"),
 	OPENGLES("binding.opengles", "org.lwjgl.opengles"),
+	OPENVR("binding.openvr", "org.lwjgl.openvr"),
 	OVR("binding.ovr", "org.lwjgl.ovr"),
 	PAR("binding.par", "org.lwjgl.util.par"),
 	SSE("binding.sse", "org.lwjgl.util.simd"),
